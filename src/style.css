@@ -71,3 +71,10 @@ h2 {
 .forecast-day {
   font-weight: bold;
 }
+
+.footer {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 15px;
+}
