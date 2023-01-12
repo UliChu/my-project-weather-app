@@ -4,11 +4,132 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Git</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d5e16b4b08.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Weather App</title>
   </head>
   <body>
-    <h1>Hello Git</h1>
-    <script src="script.js"></script>
+    <div class="container">
+      <div class="weather-app">
+        <div class="row">
+          <div class="col-12">
+            <form id="city-search">
+              <input
+                type="text"
+                placeholder="Search city"
+                autocomplete="off"
+                id="city-input"
+              />
+              <input type="submit" value="Search" />
+            </form>
+          </div>
+        </div>
+        <div class="weather-now">
+          <div class="row">
+            <div class="col-6">
+              <h1 id="temperature"></h1>
+              <h2 id="city"></h2>
+              <ul class="now">
+                <li class="day-now" id="dayNow"></li>
+                <li id="minmax">
+                  <span id="max"></span>°C / <span id="min"></span>°C
+                </li>
+                <li>Feels like <span id="feel"></span>°C</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <img src="images/sunny.png" alt="Sun" class="sun-now" />
+            </div>
+          </div>
+        </div>
+        <div class="stat-now">
+          <div class="row">
+            <div class="col">
+              <img src="images/sunny.png" alt="Sun" class="sun" />
+              <ul class="stat-list">
+                <li class="stat-name">UV index</li>
+                <li>Low</li>
+              </ul>
+            </div>
+            <div class="col">
+              <img src="images/sunny.png" alt="Sun" class="sun" />
+              <ul class="stat-list">
+                <li class="stat-name">Humidity</li>
+                <li><span id="humidity"></span>%</li>
+              </ul>
+            </div>
+            <div class="col">
+              <img src="images/sunny.png" alt="Sun" class="sun" />
+              <ul class="stat-list">
+                <li class="stat-name">Wind</li>
+                <li><span id="wind"></span>km/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="images/sunny.png" alt="Sun" class="sun" />
+            <ul class="forecast">
+              <li class="forecast-day">Sun</li>
+              <li>20°C / 11°C</li>
+            </ul>
+          </div>
+          <div class="col">
+            <img src="images/sunny.png" alt="Sun" class="sun" />
+            <ul class="forecast">
+              <li class="forecast-day">Mon</li>
+              <li>20°C / 11°C</li>
+            </ul>
+          </div>
+          <div class="col">
+            <img src="images/sunny.png" alt="Sun" class="sun" />
+            <ul class="forecast">
+              <li class="forecast-day">Tue</li>
+              <li>20°C / 11°C</li>
+            </ul>
+          </div>
+          <div class="col">
+            <img src="images/sunny.png" alt="Sun" class="sun" />
+            <ul class="forecast">
+              <li class="forecast-day">Wed</li>
+              <li>20°C / 11°C</li>
+            </ul>
+          </div>
+          <div class="col">
+            <img src="images/sunny.png" alt="Sun" class="sun" />
+            <ul class="forecast">
+              <li class="forecast-day">Thu</li>
+              <li>20°C / 11°C</li>
+            </ul>
+          </div>
+          <div class="col">
+            <img src="images/sunny.png" alt="Sun" class="sun" />
+            <ul class="forecast">
+              <li class="forecast-day">Fri</li>
+              <li>20°C / 11°C</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,73 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.weather-app {
+  border: 1px solid;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.weather-now {
+  margin: 40px auto;
+}
+
+.sun {
+  display: block;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sun-now {
+  display: block;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.day-now {
+  font-weight: bold;
+}
+
+.now {
+  padding: 0;
+  list-style: none;
+}
+
+.stat-now {
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.stat-name {
+  font-weight: bold;
+}
+
+.stat-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.forecast {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 10px;
+}
+
+.forecast-day {
+  font-weight: bold;
+}
