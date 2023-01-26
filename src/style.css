@@ -15,6 +15,11 @@ h1 {
 
 h2 {
   font-weight: 700;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: medium;
 }
 
 .weather-now {
@@ -35,13 +40,11 @@ h2 {
   margin-right: auto;
 }
 
-.day-now {
-  font-weight: bold;
-}
-
 .now {
+  font-size: small;
   padding: 0;
   list-style: none;
+  text-transform: capitalize;
 }
 
 .stat-now {

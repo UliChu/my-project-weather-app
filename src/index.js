@@ -44,6 +44,8 @@ function displayWeatherCondition(response) {
   document.querySelector("#min").innerHTML = Math.round(
     response.data.main.temp_min
   );
+  document.querySelector("#weatherDescription").innerHTML =
+    response.data.weather[0].description;
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
