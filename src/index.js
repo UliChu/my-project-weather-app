@@ -52,7 +52,7 @@ function displayWeatherCondition(response) {
 
 // City Search change
 
-function search(event) {
+function handleSubmit(event) {
   event.preventDefault();
   let apiKey = "3c949ba49d38be2487ee278e0d2d4059";
   let city = document.querySelector("#city-input").value;
@@ -61,5 +61,4 @@ function search(event) {
 }
 
 let form = document.querySelector("#city-search");
-
-form.addEventListener("submit", search);
+form.addEventListener("submit", handleSubmit);
