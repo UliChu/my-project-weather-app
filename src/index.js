@@ -1,3 +1,5 @@
+let iconElement = document.querySelector("#weather-icon");
+
 // Day and time
 let dateNow = document.querySelector("#dayNow");
 
