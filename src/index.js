@@ -67,4 +67,4 @@ search("Barcelona");
 
 let form = document.querySelector("#city-search");
 
-form.addEventListener("submit", search);
+form.addEventListener("handleSubmit", search);
