@@ -60,6 +60,8 @@ function search(event) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
+search("Barcelona");
+
 let form = document.querySelector("#city-search");
 
 form.addEventListener("submit", search);
