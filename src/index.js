@@ -29,7 +29,7 @@ dateNow.innerHTML = `${days[day]} ${hours}:${minutes}`;
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
   return days[day];
 }
@@ -48,7 +48,7 @@ function displayForecast(response) {
       <div class="col-2">
         <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
         <img
-          src="images/${forecastDay.weather[0].icon}.png""
+          src="images/${forecastDay.weather[0].icon}.svg""
           alt=""
           width="42"
         />
@@ -98,7 +98,7 @@ function displayWeatherCondition(response) {
     response.data.weather[0].description;
   iconElement.setAttribute(
     "src",
-    `images/animated/${response.data.weather[0].icon}.svg`
+    `images/${response.data.weather[0].icon}.svg`
   );
 
   getForecast(response.data.coord);
