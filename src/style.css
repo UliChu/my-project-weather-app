@@ -26,16 +26,16 @@ h3 {
   margin: 40px auto;
 }
 
-.sun {
+.stats {
   display: block;
-  width: 50px;
+  width: 80px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .icon {
   display: block;
-  width: 150px;
+  width: 220px;
   margin-left: auto;
   margin-right: auto;
 }
