@@ -63,21 +63,29 @@ h3 {
   list-style: none;
 }
 
-.forecast {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  font-size: 10px;
-}
-
-.forecast-day {
-  font-weight: bold;
-}
-
 .footer {
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 15px;
+}
+
+.weather-forecast {
+  margin-top: 10px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.weather-forecast-date {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
