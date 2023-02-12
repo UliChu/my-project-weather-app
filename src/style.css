@@ -1,12 +1,15 @@
 body {
   font-family: "Open Sans", sans-serif;
+  background: #f7f7f7;
 }
 
 .weather-app {
-  border: 1px solid;
+  border-radius: 15px;
   padding: 20px;
   margin: 20px auto;
   max-width: 500px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background: white;
 }
 
 h1 {
@@ -24,6 +27,9 @@ h3 {
 
 .weather-now {
   margin: 40px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: #f7f7f7;
 }
 
 .stats {
@@ -49,8 +55,10 @@ h3 {
 
 .stat-now {
   margin: auto;
-  padding: 40px;
   text-align: center;
+  padding-bottom: 20px;
+  margin: 20px auto;
+  max-width: 500px;
 }
 
 .stat-name {
@@ -73,8 +81,8 @@ h3 {
 .weather-forecast {
   margin-top: 10px;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  border-radius: 15px;
+  background: #f8f8f8;
 }
 
 .weather-forecast-date {
@@ -87,5 +95,5 @@ h3 {
 }
 
 .weather-forecast-temperatures {
-  font-size: 11px;
+  font-size: 12px;
 }
